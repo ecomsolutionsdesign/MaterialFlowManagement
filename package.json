@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "exceljs": "^4.4.0",
     "mongodb": "^6.15.0",
     "mongoose": "^8.13.2",
     "next": "15.3.1",
