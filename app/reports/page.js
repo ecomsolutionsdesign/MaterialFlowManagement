@@ -1,6 +1,8 @@
 'use client';
 import { useState, useEffect } from 'react';
 import LineSelector from '@/components/LineSelector';
+import ExcelDownloader from '@/components/ExcelDownloader'; // Assuming you have this component
+
 
 export default function Reports() {
   const [selectedLine, setSelectedLine] = useState('');
@@ -43,10 +45,10 @@ export default function Reports() {
 
   return (
     <div className="min-h-screen bg-gray-100">
+          <ExcelDownloader />
       <main className="container mx-auto p-4">
         <div className="bg-white rounded-lg shadow-md p-6">
           <h2 className="text-xl font-semibold mb-4">Production Report</h2>
-
           <LineSelector onSelect={handleLineSelect} />
 
           {loading ? (
